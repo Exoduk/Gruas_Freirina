@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grúas Freirina 24/7</title>
+  <meta name="description" content="Grúas Freirina: servicio rápido y confiable. Cobertura en Atacama, asistencia 24/7 y precios claros.">
+  <meta property="og:title" content="Grúas Freirina 24/7">
+  <meta property="og:description" content="Asistencia en ruta, traslado de vehículos, maquinaria y servicios industriales. Escríbenos por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/logo2.jpg">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="icon" href="imagenes/logo2.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img class="logo" src="imagenes/logo2.jpg" alt="Grúas Freirina">
+        <span>Grúas Freirina</span>
+      </a>
+      <nav class="hide-sm">
+        <a href="#servicios">Servicios</a> ·
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn" id="btnWspTop" href="#">WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="badges">
+          <span class="badge">Atención 24/7</span>
+          <span class="badge">Cobertura regional</span>
+          <span class="badge">Precios claros</span>
+        </div>
+        <h1>Grúas y asistencia en ruta <span style="color:var(--brand)">rápidas</span> y <span style="color:var(--ok)">confiables</span></h1>
+        <p>Traslado de vehículos, rescate en carretera y servicios industriales en toda la región de Atacama. Llega seguro a tu destino.</p>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+          <a class="btn" id="btnWspHero" href="#">Pedir grúa por WhatsApp</a>
+          <a class="btn" style="background:linear-gradient(90deg,#fff,#d1fae5);color:#0b1220" href="tel:+56953406851">Llamar ahora</a>
+        </div>
+        <small style="display:block;color:var(--muted);margin-top:.6rem">Respuesta promedio &lt; 5 minutos</small>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <h2 style="text-align:center;margin-bottom:1rem;">Nuestros Servicios</h2>
+
+      <div class="carousel-wrap">
+        <button class="car-btn left"  aria-label="Anterior"  id="carPrev">&#10094;</button>
+        <button class="car-btn right" aria-label="Siguiente" id="carNext">&#10095;</button>
+
+        <div class="carousel" id="carouselServicios">
+
+          <div class="card" data-img="imagenes/remolque.jpg">
+            <img src="imagenes/remolque.jpg" alt="Remolque de Vehículos" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Remolque de Vehículos</h3>
+              <p>Traslado seguro dentro o fuera de la ciudad. Grúas plataforma, winche y amarres certificados para todo tipo de automóviles.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/asistencia.jpg">
+            <img src="imagenes/asistencia.jpg" alt="Asistencia en Ruta" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Asistencia en Ruta</h3>
+              <p>Partida de batería, cambio de neumáticos, suministro de combustible y apertura de vehículos. Llegamos donde estés.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/maquinaria.jpg">
+            <img src="imagenes/maquinaria.jpg" alt="Traslado de Maquinaria" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Traslado de Maquinaria</h3>
+              <p>Transporte de maquinaria ligera o pesada: UTV, motos, cuatriciclos, mini cargadores, retroexcavadoras, etc.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/tonelaje.jpg">
+            <img src="imagenes/tonelaje.jpg" alt="Levantamiento de Alto Tonelaje" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Levantamiento de Alto Tonelaje</h3>
+              <p>Equipos de grúa y operadores especializados para levantamientos industriales y cargas de gran peso y volumen.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/instalacion.jpg">
+            <img src="imagenes/instalacion.jpg" alt="Instalación de Cámaras y Postes" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Instalación de Cámaras / Postes</h3>
+              <p>Montaje seguro de postes, cámaras y equipos eléctricos en altura, cumpliendo normativas de seguridad vigentes.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/iluminarias.jpg">
+            <img src="imagenes/iluminarias.jpg" alt="Mantención a Iluminarias" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Mantención a Iluminarias</h3>
+              <p>Reparación, limpieza y recambio de luminarias en calles, bodegas e instalaciones industriales, con grúa certificada.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/letreros.jpg">
+            <img src="imagenes/letreros.jpg" alt="Instalación de Letreros" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Instalación de Letreros</h3>
+              <p>Instalación profesional de letreros y señaléticas de gran formato. Personal capacitado y equipos de altura seguros.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/estructuras.jpg">
+            <img src="imagenes/estructuras.jpg" alt="Armados de Estructuras Metálicas" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Armados de Estructuras Metálicas</h3>
+              <p>Montaje y ensamblaje de estructuras metálicas industriales o comerciales, con soporte de grúa y maniobra precisa.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/aridos.jpg">
+            <img src="imagenes/aridos.jpg" alt="Venta de Áridos" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Venta de Áridos</h3>
+              <p>Suministro de áridos de calidad: arena, gravilla, ripio y estabilizado. Entrega directa en obra o despacho a domicilio en la región.</p>
+            </div>
+          </div>
+
+          <div class="card" data-img="imagenes/tierra.jpg">
+            <img src="imagenes/tierra.jpg" alt="Movimientos de Tierra" loading="lazy">
+            <div class="body">
+              <div class="pill">Servicio</div>
+              <h3>Movimientos de Tierra</h3>
+              <p>Excavación, nivelación, relleno y retiro de material. Equipos pesados y operadores expertos para obras civiles y proyectos industriales.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contacto">
+      <div>
+        <h3 style="margin:.2rem 0">¿Necesitas una grúa ahora?</h3>
+        <small>Cuéntanos tu ubicación y el tipo de vehículo. Te respondemos al tiro.</small>
+      </div>
+      <a class="btn" id="btnWspCta" href="#">Escribir por WhatsApp</a>
+    </section>
+
+    <footer>
+      <div class="cols">
+        <div>
+          <strong>Grúas Freirina SpA</strong><br>
+          <span class="muted">Freirina, Región de Atacama</span><br>
+          <a href="mailto:contacto@gruasfreirina.cl">contacto@gruasfreirina.cl</a>
+        </div>
+        <div>
+          <strong>Horario</strong><br>
+          24 horas / 7 días
+        </div>
+        <div>
+          <strong>Redes</strong><br>
+          <a href="#">Facebook</a> · <a href="#">Instagram</a>
+        </div>
+      </div>
+      <p style="margin-top:1.2rem">© <span id="year"></span> Grúas Freirina — Todos los derechos reservados.</p>
+    </footer>
+  </main>
+
+  <!-- Modal de imagen -->
+  <div id="modalImg" class="modal">
+    <span id="closeModal">&times;</span>
+    <img class="modal-content" id="imgAmpliada" alt="">
+  </div>
+
+  <script>
+    // WhatsApp
+    const WSP_PHONE = "+56953406851";
+    const WSP_MSG   = "Hola, necesito una grúa. Mi ubicación es ... y mi vehículo es ...";
+    function wspLink(){
+      const base = `https://wa.me/${WSP_PHONE.replace(/[^0-9]/g,'')}`;
+      const qs   = `?text=${encodeURIComponent(WSP_MSG)}`;
+      return base + qs;
+    }
+    ["btnWspTop","btnWspHero","btnWspCta"].forEach(id=>{
+      const el=document.getElementById(id);
+      if(el){ el.href=wspLink(); el.target="_blank"; el.rel="noopener"; }
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Carrusel
+    const carrusel = document.getElementById('carouselServicios');
+    const btnPrev  = document.getElementById('carPrev');
+    const btnNext  = document.getElementById('carNext');
+    function scrollAmount(){
+      return Math.max(280, Math.floor(carrusel.clientWidth * 0.9));
+    }
+    function updateButtons(){
+      const maxScroll = carrusel.scrollWidth - carrusel.clientWidth - 1;
+      btnPrev.disabled = carrusel.scrollLeft <= 0;
+      btnNext.disabled = carrusel.scrollLeft >= maxScroll;
+    }
+    if (carrusel && btnPrev && btnNext){
+      btnPrev.addEventListener('click',()=>{ carrusel.scrollBy({left:-scrollAmount(), behavior:'smooth'}); setTimeout(updateButtons,250); });
+      btnNext.addEventListener('click',()=>{ carrusel.scrollBy({left:scrollAmount(), behavior:'smooth'}); setTimeout(updateButtons,250); });
+      carrusel.addEventListener('scroll',updateButtons);
+      window.addEventListener('resize',updateButtons);
+      updateButtons();
+    }
+
+    // Modal de imagen
+    const modal = document.getElementById("modalImg");
+    const modalImg = document.getElementById("imgAmpliada");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll(".card").forEach(card=>{
+      card.addEventListener("click",()=>{
+        const imgSrc = card.dataset.img;
+        modal.style.display = "flex";
+        modalImg.src = imgSrc;
+      });
+    });
+
+    closeModal.addEventListener("click",()=> modal.style.display="none");
+    modal.addEventListener("click",(e)=>{ if(e.target===modal) modal.style.display="none"; });
+  </script>
+</body>
+</html>
