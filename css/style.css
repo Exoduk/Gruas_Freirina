@@ -1,3 +1,6 @@
+/* ===========================================================
+   VARIABLES DE COLOR Y ESTILO GLOBAL
+   =========================================================== */
 :root {
   --bg:#0b1220;
   --fg:#e5e7eb;
@@ -10,6 +13,9 @@
   --shadow:0 10px 30px rgba(0,0,0,.35);
 }
 
+/* ===========================================================
+   BASE GENERAL
+   =========================================================== */
 *{box-sizing:border-box}
 html,body{
   margin:0;
@@ -21,6 +27,9 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .container{width:min(1100px,92%);margin-inline:auto}
 
+/* ===========================================================
+   BOTONES PRINCIPALES
+   =========================================================== */
 .btn{
   display:inline-flex;align-items:center;gap:.6rem;
   padding:.9rem 1.2rem;border-radius:999px;
@@ -30,14 +39,16 @@ img{max-width:100%;display:block}
 }
 .btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
 
-/* --- Navegación principal con botones --- */
+/* ===========================================================
+   NAVEGACIÓN PRINCIPAL
+   =========================================================== */
 .nav-buttons {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
 
-/* Aplica mismo estilo base del botón WhatsApp */
+/* Botones del header (Servicios, Flota, Contacto) */
 .btn-nav {
   background: linear-gradient(90deg, var(--brand), var(--brand-2));
   color: #001018;
@@ -47,7 +58,6 @@ img{max-width:100%;display:block}
   padding: 0.9rem 1.2rem;
   transition: transform .08s ease, filter .2s ease;
 }
-
 .btn-nav:hover {
   transform: translateY(-1px);
   filter: brightness(1.05);
@@ -56,21 +66,37 @@ img{max-width:100%;display:block}
   transform: translateY(0);
 }
 
-
-/* Header */
-header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.6);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+/* ===========================================================
+   ENCABEZADO
+   =========================================================== */
+header{
+  position:sticky;
+  top:0;z-index:20;
+  background:rgba(11,18,32,.6);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
 .brand{display:flex;align-items:center;gap:.7rem;font-weight:800}
-.brand .logo{width:70px;height:70px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow)}
+.brand .logo{width:90px;height:90px;border-radius:0px;box-shadow:var(--shadow)}
 
-/* Hero */
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:clamp(1.2rem,3vw,2.2rem) 0 1rem}
+/* ===========================================================
+   HERO
+   =========================================================== */
+.hero{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:2rem;align-items:center;
+  padding:clamp(1.2rem,3vw,2.2rem) 0 1rem;
+}
 .hero h1{font-size:clamp(1.9rem,3.5vw,3rem);line-height:1.15;margin:.2rem 0}
 .hero p{color:var(--muted);margin:0 0 1.2rem}
 .badges{display:flex;flex-wrap:wrap;gap:.6rem;margin:.3rem 0 1rem}
 .badge{font-size:.85rem;padding:.35rem .7rem;border-radius:999px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04)}
 
-/* Carrusel */
+/* ===========================================================
+   CARRUSELES DE SERVICIOS Y FLOTA
+   =========================================================== */
 .carousel-wrap{
   position:relative;
   overflow:visible; /* permite que los botones sobresalgan */
@@ -82,6 +108,8 @@ header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.6);backdrop-fi
 }
 .carousel::-webkit-scrollbar {height:8px}
 .carousel::-webkit-scrollbar-thumb {background:var(--brand);border-radius:4px}
+
+/* Tarjetas individuales */
 .card{
   flex:0 0 300px;
   scroll-snap-align:start;
@@ -93,11 +121,16 @@ header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.6);backdrop-fi
 }
 .card img {aspect-ratio:16/10;object-fit:cover}
 .card .body{padding:1rem}
-.pill{display:inline-block;font-size:.8rem;border:1px solid rgba(255,255,255,.16);padding:.25rem .5rem;border-radius:999px;color:var(--muted)}
+.pill{
+  display:inline-block;font-size:.8rem;
+  border:1px solid rgba(255,255,255,.16);
+  padding:.25rem .5rem;border-radius:999px;
+  color:var(--muted);
+}
 
-/* Botones laterales (solo escritorio) */
+/* Botones laterales de navegación (visible solo en escritorio) */
 .car-btn{
-  display:none; /* oculto en móvil */
+  display:none;
   position:absolute;
   top:50%;
   width:44px;height:44px;
@@ -118,19 +151,32 @@ header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.6);backdrop-fi
 .car-btn.left{left:0;transform:translate(-120%,-50%)}
 .car-btn.right{right:0;transform:translate(120%,-50%)}
 
+/* Mostrar flechas solo en pantallas grandes */
 @media (min-width:900px){
-  .car-btn{display:inline-flex}
-  .carousel-wrap .car-btn{opacity:0;transition:opacity .2s ease}
-  .carousel-wrap:hover .car-btn{opacity:1}
+  .car-btn {
+    display:inline-flex;
+    opacity:1;              /* siempre visibles */
+    transition:opacity .2s ease;
+  }
 }
 
-/* CTA y footer */
-.cta{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:linear-gradient(90deg, rgba(56,189,248,.12), rgba(16,185,129,.12));border:1px dashed rgba(56,189,248,.35);padding:1rem;border-radius:var(--radius)}
+
+/* ===========================================================
+   SECCIÓN CTA Y FOOTER
+   =========================================================== */
+.cta{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  background:linear-gradient(90deg, rgba(56,189,248,.12), rgba(16,185,129,.12));
+  border:1px dashed rgba(56,189,248,.35);
+  padding:1rem;border-radius:var(--radius);
+}
 footer{color:#aab0b8;padding:2rem 0 3rem}
 footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem}
 footer a{opacity:.9}
 
-/* Responsive */
+/* ===========================================================
+   RESPONSIVE GENERAL
+   =========================================================== */
 @media(max-width:900px){
   .hero{grid-template-columns:1fr}
 }
@@ -140,37 +186,144 @@ footer a{opacity:.9}
   .nav .hide-sm{display:none}
 }
 
-/* ===== Modal de imagen ===== */
+/* ===========================================================
+   MODAL DE GALERÍA MULTIMEDIA (IMÁGENES / VIDEOS)
+   =========================================================== */
 .modal {
   display:none;
   position:fixed;
-  z-index:999;
-  left:0; top:0;
-  width:100%; height:100%;
-  background:rgba(0,0,0,0.8);
+  inset:0;
+  background:rgba(0,0,0,0.85);
   justify-content:center;
   align-items:center;
-  backdrop-filter:blur(5px);
+  z-index:9999;
 }
 .modal-content {
-  max-width:90%;
-  max-height:85%;
-  border-radius:16px;
-  box-shadow:0 0 30px rgba(0,0,0,.6);
-  animation:zoomIn .3s ease;
+  position: relative;
+  max-width: 90%;
+  max-height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@keyframes zoomIn {
-  from {transform:scale(0.8);opacity:0;}
-  to {transform:scale(1);opacity:1;}
+
+/* Elementos dentro del modal */
+#mediaContainer img,
+#mediaContainer video {
+  max-width: 100%;
+  max-height: 75vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
+
+/* Cierre del modal */
 #closeModal {
-  position:absolute;
-  top:25px; right:40px;
-  color:#fff;
-  font-size:40px;
-  font-weight:bold;
-  cursor:pointer;
-  text-shadow:0 0 6px rgba(0,0,0,.7);
-  transition:color .2s;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);
 }
-#closeModal:hover { color:#38bdf8; }
+#closeModal:hover { color: var(--brand-2); }
+
+/* Flechas de navegación dentro del modal */
+.nav-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  z-index: 10;
+}
+.nav-btn:hover { background: rgba(255,255,255,0.4); }
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ===========================================================
+   ÁREAS DE SERVICIO Y MÉTODOS DE PAGO
+   =========================================================== */
+.areas-servicio {
+  margin: 3rem 0;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.05));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.areas-servicio h2 {
+  text-align: center;
+  color: var(--brand-2);
+  margin-bottom: .8rem;
+}
+.areas-servicio .areas-desc {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  font-size: .95rem;
+}
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.areas-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+}
+.areas-grid li {
+  color: var(--fg);
+  font-weight: 500;
+}
+.areas-servicio h3 {
+  margin-bottom: 1rem;
+  color: var(--fg);
+  text-align: center;
+  font-size: 1.1rem;
+}
+.metodos-pago {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.pago {
+  font-size: .9rem;
+  padding: .4rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  color: #001018;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+  transition: transform .1s ease, filter .2s ease;
+}
+.pago:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+/* ===========================================================
+   ADAPTACIÓN PARA MÓVILES (OCULTAR BOTONES EXCESIVOS)
+   =========================================================== */
+@media (max-width: 768px) {
+  .nav-buttons {
+    display: none;
+  }
+}
+
+/* --- Alternativa: mantener solo botón WhatsApp visible en móvil ---
+@media (max-width: 768px) {
+  .btn.btn-nav {
+    display: none;
+  }
+}
+*/

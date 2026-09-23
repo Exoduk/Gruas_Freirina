@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grúas Freirina 24/7</title>
+  <title>Grúas Freirina y Huasco 24/7</title>
   <meta name="description" content="Grúas Freirina: servicio rápido y confiable. Cobertura en Atacama, asistencia 24/7 y precios claros.">
   <meta property="og:title" content="Grúas Freirina 24/7">
   <meta property="og:description" content="Asistencia en ruta, traslado de vehículos, maquinaria y servicios industriales. Escríbenos por WhatsApp.">
@@ -19,18 +19,19 @@
     <div class="container nav">
       <a class="brand" href="#">
         <img class="logo" src="imagenes/logo2.jpg" alt="Grúas Freirina">
-        <span>Grúas Freirina</span>
+        <span>Grúa Freirina y Huasco</span>
       </a>
-     <div class="nav-buttons">
-      <a class="btn btn-nav" href="#servicios">Servicios</a>
-      <a class="btn btn-nav" href="#contacto">Contacto</a>
-      <a class="btn" id="btnWspTop" href="#">WhatsApp</a>
-    </div>
-
+      <div class="nav-buttons">
+        <a class="btn btn-nav" href="#servicios">Servicios</a>
+        <a class="btn btn-nav" href="#flota">Nuestra Flota</a>
+        <a class="btn btn-nav" href="#contacto">Contacto</a>
+        <a class="btn" id="btnWspTop" href="#">WhatsApp</a>
+      </div>
     </div>
   </header>
 
   <main class="container">
+    <!-- HERO -->
     <section class="hero">
       <div>
         <div class="badges">
@@ -48,109 +49,110 @@
       </div>
     </section>
 
+    <!-- ÁREAS DE SERVICIO -->
+    <section id="areas" class="areas-servicio">
+      <h2>Áreas de Servicio</h2>
+      <p class="areas-desc">Cobertura completa en la Región de Atacama y zonas aledañas.</p>
+      <div class="areas-grid">
+        <ul>
+          <li>Freirina</li><li>Huasco</li><li>Vallenar</li><li>Alto del Carmen</li>
+        </ul>
+        <ul>
+          <li>Copiapó</li><li>Caldera</li><li>Chañaral</li><li>Domeyko</li>
+        </ul>
+        <ul>
+          <li>La Higuera</li><li>El Tránsito</li><li>Carrizal Bajo</li><li>Chañaral de Aceituno</li>
+        </ul>
+      </div>
+      <h3>Métodos de Pago Disponibles</h3>
+      <div class="metodos-pago">
+        <span class="pill pago">Efectivo</span>
+        <span class="pill pago">Transferencia</span>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
     <section id="servicios">
       <h2 style="text-align:center;margin-bottom:1rem;">Nuestros Servicios</h2>
-
       <div class="carousel-wrap">
-        <button class="car-btn left"  aria-label="Anterior"  id="carPrev">&#10094;</button>
-        <button class="car-btn right" aria-label="Siguiente" id="carNext">&#10095;</button>
-
+        <button class="car-btn left" id="carPrev">&#10094;</button>
+        <button class="car-btn right" id="carNext">&#10095;</button>
         <div class="carousel" id="carouselServicios">
 
-          <div class="card" data-img="imagenes/remolque.jpg">
-            <img src="imagenes/remolque.jpg" alt="Remolque de Vehículos" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Remolque de Vehículos</h3>
-              <p>Traslado seguro dentro o fuera de la ciudad. Grúas plataforma, winche y amarres certificados para todo tipo de automóviles.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/remolque.jpg","videos/asistencia.mp4"]'>
+            <img src="imagenes/remolque.jpg" alt="Remolque de Vehículos">
+            <div class="body"><div class="pill">Servicio</div><h3>Remolque de Vehículos</h3>
+              <p>Traslado seguro dentro o fuera de la ciudad...</p></div></div>
 
-          <div class="card" data-img="imagenes/asistencia.jpg">
-            <img src="imagenes/asistencia.jpg" alt="Asistencia en Ruta" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Asistencia en Ruta</h3>
-              <p>Partida de batería, cambio de neumáticos, suministro de combustible y apertura de vehículos. Llegamos donde estés.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/asistencia.jpg"]'>
+            <img src="imagenes/asistencia.jpg" alt="Asistencia en Ruta">
+            <div class="body"><div class="pill">Servicio</div><h3>Asistencia en Ruta</h3>
+              <p>Partida de batería, cambio de neumáticos...</p></div></div>
 
-          <div class="card" data-img="imagenes/maquinaria.jpg">
-            <img src="imagenes/maquinaria.jpg" alt="Traslado de Maquinaria" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Traslado de Maquinaria</h3>
-              <p>Transporte de maquinaria ligera o pesada: UTV, motos, cuatriciclos, mini cargadores, retroexcavadoras, etc.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/maquinaria.jpg"]'>
+            <img src="imagenes/maquinaria.jpg" alt="Traslado de Maquinaria">
+            <div class="body"><div class="pill">Servicio</div><h3>Traslado de Maquinaria</h3>
+              <p>Transporte de maquinaria ligera o pesada...</p></div></div>
 
-          <div class="card" data-img="imagenes/tonelaje.jpg">
-            <img src="imagenes/tonelaje.jpg" alt="Levantamiento de Alto Tonelaje" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Levantamiento de Alto Tonelaje</h3>
-              <p>Equipos de grúa y operadores especializados para levantamientos industriales y cargas de gran peso y volumen.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/tonelaje.jpg"]'>
+            <img src="imagenes/tonelaje.jpg" alt="Levantamiento de Alto Tonelaje">
+            <div class="body"><div class="pill">Servicio</div><h3>Levantamiento de Alto Tonelaje</h3>
+              <p>Equipos de grúa y operadores especializados...</p></div></div>
 
-          <div class="card" data-img="imagenes/instalacion.jpg">
-            <img src="imagenes/instalacion.jpg" alt="Instalación de Cámaras y Postes" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Instalación de Cámaras / Postes</h3>
-              <p>Montaje seguro de postes, cámaras y equipos eléctricos en altura, cumpliendo normativas de seguridad vigentes.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/instalacion.jpg"]'>
+            <img src="imagenes/instalacion.jpg" alt="Instalación de Cámaras y Postes">
+            <div class="body"><div class="pill">Servicio</div><h3>Instalación de Cámaras / Postes</h3>
+              <p>Montaje seguro de postes y cámaras...</p></div></div>
 
-          <div class="card" data-img="imagenes/iluminarias.jpg">
-            <img src="imagenes/iluminarias.jpg" alt="Mantención a Iluminarias" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Mantención a Iluminarias</h3>
-              <p>Reparación, limpieza y recambio de luminarias en calles, bodegas e instalaciones industriales, con grúa certificada.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/iluminarias.jpg"]'>
+            <img src="imagenes/iluminarias.jpg" alt="Mantención a Iluminarias">
+            <div class="body"><div class="pill">Servicio</div><h3>Mantención a Iluminarias</h3>
+              <p>Reparación y recambio de luminarias...</p></div></div>
 
-          <div class="card" data-img="imagenes/letreros.jpg">
-            <img src="imagenes/letreros.jpg" alt="Instalación de Letreros" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Instalación de Letreros</h3>
-              <p>Instalación profesional de letreros y señaléticas de gran formato. Personal capacitado y equipos de altura seguros.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/letreros.jpg"]'>
+            <img src="imagenes/letreros.jpg" alt="Instalación de Letreros">
+            <div class="body"><div class="pill">Servicio</div><h3>Instalación de Letreros</h3>
+              <p>Instalación profesional de señaléticas...</p></div></div>
 
-          <div class="card" data-img="imagenes/estructuras.jpg">
-            <img src="imagenes/estructuras.jpg" alt="Armados de Estructuras Metálicas" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Armados de Estructuras Metálicas</h3>
-              <p>Montaje y ensamblaje de estructuras metálicas industriales o comerciales, con soporte de grúa y maniobra precisa.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/estructuras.jpg"]'>
+            <img src="imagenes/estructuras.jpg" alt="Armados de Estructuras Metálicas">
+            <div class="body"><div class="pill">Servicio</div><h3>Armados de Estructuras Metálicas</h3>
+              <p>Montaje de estructuras metálicas...</p></div></div>
 
-          <div class="card" data-img="imagenes/aridos.jpg">
-            <img src="imagenes/aridos.jpg" alt="Venta de Áridos" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Venta de Áridos</h3>
-              <p>Suministro de áridos de calidad: arena, gravilla, ripio y estabilizado. Entrega directa en obra o despacho a domicilio en la región.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/aridos.jpg"]'>
+            <img src="imagenes/aridos.jpg" alt="Venta de Áridos">
+            <div class="body"><div class="pill">Servicio</div><h3>Venta de Áridos</h3>
+              <p>Suministro de áridos: arena, gravilla, ripio...</p></div></div>
 
-          <div class="card" data-img="imagenes/tierra.jpg">
-            <img src="imagenes/tierra.jpg" alt="Movimientos de Tierra" loading="lazy">
-            <div class="body">
-              <div class="pill">Servicio</div>
-              <h3>Movimientos de Tierra</h3>
-              <p>Excavación, nivelación, relleno y retiro de material. Equipos pesados y operadores expertos para obras civiles y proyectos industriales.</p>
-            </div>
-          </div>
+          <div class="card" data-gallery='["imagenes/tierra.jpg"]'>
+            <img src="imagenes/tierra.jpg" alt="Movimientos de Tierra">
+            <div class="body"><div class="pill">Servicio</div><h3>Movimientos de Tierra</h3>
+              <p>Excavación, nivelación y retiro de material...</p></div></div>
 
         </div>
       </div>
     </section>
 
+    <!-- FLOTA -->
+    <section id="flota">
+      <h2 style="text-align:center;margin:2rem 0 1rem;">Nuestra Flota</h2>
+      <div class="carousel-wrap">
+        <button class="car-btn left" id="carPrevFlota">&#10094;</button>
+        <button class="car-btn right" id="carNextFlota">&#10095;</button>
+        <div class="carousel" id="carouselFlota">
+          <div class="card" data-gallery='["imagenes/camion.jpg"]'>
+            <img src="imagenes/camion.jpg" alt="Camión Plataforma"><div class="body"><h3>Camión Plataforma</h3></div></div>
+          <div class="card" data-gallery='["imagenes/flota2.jpg"]'>
+            <img src="imagenes/flota2.jpg" alt="Grúa de Rescate"><div class="body"><h3>Grúa de Rescate</h3></div></div>
+          <div class="card" data-gallery='["imagenes/flota3.jpg"]'>
+            <img src="imagenes/flota3.jpg" alt="Camioneta de Asistencia"><div class="body"><h3>Camioneta de Asistencia</h3></div></div>
+          <div class="card" data-gallery='["imagenes/flota4.jpg"]'>
+            <img src="imagenes/flota4.jpg" alt="Grúa Todo Terreno"><div class="body"><h3>Grúa Todo Terreno</h3></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA CONTACTO -->
     <section class="cta" id="contacto">
       <div>
         <h3 style="margin:.2rem 0">¿Necesitas una grúa ahora?</h3>
@@ -159,84 +161,118 @@
       <a class="btn" id="btnWspCta" href="#">Escribir por WhatsApp</a>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <div class="cols">
         <div>
-          <strong>Grúas Freirina SpA</strong><br>
+          <strong>Grúas Freirina</strong><br>
           <span class="muted">Freirina, Región de Atacama</span><br>
-          <a href="mailto:contacto@gruasfreirina.cl">contacto@gruasfreirina.cl</a>
+          <a href="mailto:transportesdagoromero@gmail.com">transportesdagoromero@gmail.com</a>
         </div>
         <div>
-          <strong>Horario</strong><br>
-          24 horas / 7 días
+          <strong>Horario</strong><br>24 horas / 7 días
         </div>
         <div>
           <strong>Redes</strong><br>
-          <a href="https://www.facebook.com/f953406851?locale=es_LA" target="_blank" rel="noopener">Facebook</a> · 
-          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/f953406851?locale=es_LA" target="_blank" rel="noopener">Facebook</a>
         </div>
-
       </div>
       <p style="margin-top:1.2rem">© <span id="year"></span> Grúas Freirina — Todos los derechos reservados.</p>
     </footer>
   </main>
 
-  <!-- Modal de imagen -->
-  <div id="modalImg" class="modal">
+  <!-- MODAL GALERÍA -->
+  <div id="modalGaleria" class="modal">
     <span id="closeModal">&times;</span>
-    <img class="modal-content" id="imgAmpliada" alt="">
+    <button id="prevMedia" class="nav-btn">&#10094;</button>
+    <div id="mediaContainer"></div>
+    <button id="nextMedia" class="nav-btn">&#10095;</button>
   </div>
 
   <script>
-    // WhatsApp
+    /* WhatsApp */
     const WSP_PHONE = "+56953406851";
-    const WSP_MSG   = "Hola, necesito una grúa. Mi ubicación es ... y mi vehículo es ...";
-    function wspLink(){
-      const base = `https://wa.me/${WSP_PHONE.replace(/[^0-9]/g,'')}`;
-      const qs   = `?text=${encodeURIComponent(WSP_MSG)}`;
-      return base + qs;
-    }
+    const WSP_MSG = "Hola, necesito una grúa. Mi ubicación es ... y mi vehículo es ...";
+    function wspLink(){const base=`https://wa.me/${WSP_PHONE.replace(/[^0-9]/g,'')}`;
+      const qs=`?text=${encodeURIComponent(WSP_MSG)}`;return base+qs;}
     ["btnWspTop","btnWspHero","btnWspCta"].forEach(id=>{
       const el=document.getElementById(id);
-      if(el){ el.href=wspLink(); el.target="_blank"; el.rel="noopener"; }
+      if(el){el.href=wspLink();el.target="_blank";el.rel="noopener";}
     });
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent=new Date().getFullYear();
 
-    // Carrusel
-    const carrusel = document.getElementById('carouselServicios');
-    const btnPrev  = document.getElementById('carPrev');
-    const btnNext  = document.getElementById('carNext');
-    function scrollAmount(){
-      return Math.max(280, Math.floor(carrusel.clientWidth * 0.9));
-    }
+    /* Carrusel Servicios */
+    const carrusel=document.getElementById('carouselServicios');
+    const btnPrev=document.getElementById('carPrev');
+    const btnNext=document.getElementById('carNext');
+    function scrollAmount(){return Math.max(280,Math.floor(carrusel.clientWidth*0.9));}
     function updateButtons(){
-      const maxScroll = carrusel.scrollWidth - carrusel.clientWidth - 1;
-      btnPrev.disabled = carrusel.scrollLeft <= 0;
-      btnNext.disabled = carrusel.scrollLeft >= maxScroll;
+      const maxScroll=carrusel.scrollWidth-carrusel.clientWidth-1;
+      btnPrev.disabled=carrusel.scrollLeft<=0;
+      btnNext.disabled=carrusel.scrollLeft>=maxScroll;
     }
-    if (carrusel && btnPrev && btnNext){
-      btnPrev.addEventListener('click',()=>{ carrusel.scrollBy({left:-scrollAmount(), behavior:'smooth'}); setTimeout(updateButtons,250); });
-      btnNext.addEventListener('click',()=>{ carrusel.scrollBy({left:scrollAmount(), behavior:'smooth'}); setTimeout(updateButtons,250); });
+    if(carrusel&&btnPrev&&btnNext){
+      btnPrev.addEventListener('click',()=>{carrusel.scrollBy({left:-scrollAmount(),behavior:'smooth'});setTimeout(updateButtons,250);});
+      btnNext.addEventListener('click',()=>{carrusel.scrollBy({left:scrollAmount(),behavior:'smooth'});setTimeout(updateButtons,250);});
       carrusel.addEventListener('scroll',updateButtons);
-      window.addEventListener('resize',updateButtons);
-      updateButtons();
+      window.addEventListener('resize',updateButtons);updateButtons();
     }
 
-    // Modal de imagen
-    const modal = document.getElementById("modalImg");
-    const modalImg = document.getElementById("imgAmpliada");
-    const closeModal = document.getElementById("closeModal");
+    /* Carrusel Flota */
+    const carruselFlota=document.getElementById('carouselFlota');
+    const btnPrevFlota=document.getElementById('carPrevFlota');
+    const btnNextFlota=document.getElementById('carNextFlota');
+    function scrollAmountFlota(){return Math.max(280,Math.floor(carruselFlota.clientWidth*0.9));}
+    function updateButtonsFlota(){
+      const maxScroll=carruselFlota.scrollWidth-carruselFlota.clientWidth-1;
+      btnPrevFlota.disabled=carruselFlota.scrollLeft<=0;
+      btnNextFlota.disabled=carruselFlota.scrollLeft>=maxScroll;
+    }
+    if(carruselFlota&&btnPrevFlota&&btnNextFlota){
+      btnPrevFlota.addEventListener('click',()=>{carruselFlota.scrollBy({left:-scrollAmountFlota(),behavior:'smooth'});setTimeout(updateButtonsFlota,250);});
+      btnNextFlota.addEventListener('click',()=>{carruselFlota.scrollBy({left:scrollAmountFlota(),behavior:'smooth'});setTimeout(updateButtonsFlota,250);});
+      carruselFlota.addEventListener('scroll',updateButtonsFlota);
+      window.addEventListener('resize',updateButtonsFlota);updateButtonsFlota();
+    }
+
+    /* Galería multimedia (imágenes / videos) */
+    const modal=document.getElementById("modalGaleria");
+    const closeModal=document.getElementById("closeModal");
+    const mediaContainer=document.getElementById("mediaContainer");
+    const prevBtn=document.getElementById("prevMedia");
+    const nextBtn=document.getElementById("nextMedia");
+    let currentGallery=[],currentIndex=0;
 
     document.querySelectorAll(".card").forEach(card=>{
       card.addEventListener("click",()=>{
-        const imgSrc = card.dataset.img;
-        modal.style.display = "flex";
-        modalImg.src = imgSrc;
+        const galleryData=card.dataset.gallery?JSON.parse(card.dataset.gallery):[];
+        if(galleryData.length>0){
+          currentGallery=galleryData;currentIndex=0;
+          showMedia();modal.style.display="flex";
+        }
       });
     });
 
-    closeModal.addEventListener("click",()=> modal.style.display="none");
-    modal.addEventListener("click",(e)=>{ if(e.target===modal) modal.style.display="none"; });
+    function showMedia(){
+      const src=currentGallery[currentIndex];
+      mediaContainer.innerHTML="";
+      if(src.endsWith(".mp4")){
+        const vid=document.createElement("video");
+        vid.src=src;vid.controls=true;vid.autoplay=true;
+        mediaContainer.appendChild(vid);
+      } else {
+        const img=document.createElement("img");
+        img.src=src;mediaContainer.appendChild(img);
+      }
+    }
+    nextBtn.addEventListener("click",()=>{
+      currentIndex=(currentIndex+1)%currentGallery.length;showMedia();
+    });
+    prevBtn.addEventListener("click",()=>{
+      currentIndex=(currentIndex-1+currentGallery.length)%currentGallery.length;showMedia();
+    });
+    closeModal.addEventListener("click",()=>modal.style.display="none");
+    modal.addEventListener("click",e=>{if(e.target===modal)modal.style.display="none";});
   </script>
 </body>
 </html>
